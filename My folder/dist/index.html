@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="output.css" />
+  </head>
+  <body>
+    <section
+      class="min-h-screen bg-slate-900 flex items-center justify-center p-8"
+    >
+      <!-- Email container -->
+      <div class="bg-white max-w-3xl flex rounded-3xl shadow-md">
+        <!-- form container -->
+        <div class="p-8">
+          <div class="pb-8 lg:flex flex-col">
+            <h1 class="text-3xl font-bold w-52 pb-8">
+              Learn how to take photos like a pro
+            </h1>
+            <p class="pb-4 w-72">
+              I'll send you a simple guide that will boost your photography
+              skills overnight.
+            </p>
+            <p class="w-72">Get the 28-step guide by subscribing below.</p>
+          </div>
+
+          <!-- Form -->
+          <form
+            name="submit-to-google-sheet"
+            id="formFill"
+            class="flex flex-col gap-4 lg:flex-row"
+          >
+            <input
+              type="email"
+              name="email"
+              id="email"
+              placeholder="Email address"
+              required
+              class="rounded-md border px-4 py-2"
+            />
+            <button
+              class="bg-teal-500 text-white px-4 py-2 rounded-md"
+              id="btn "
+              type="submit"
+              onclick="subscribe()"
+            >
+              Subscribe
+            </button>
+          </form>
+        </div>
+        <!-- Image container -->
+        <div class="md:block hidden w-1/2">
+          <img src="/img/photo.jpg" alt="" class="rounded-3xl" />
+        </div>
+      </div>
+    </section>
+
+    <script src="/js/script.js"></script>
+  </body>
+</html>
